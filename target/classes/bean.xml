@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans>
+    <bean id="pedidoDao" class="edu.jdbc.dao.PedidoServicioImpl">
+        <property name="datasource" ref="dataSource"></property>
+    </bean>
+    <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+        <property name="driverClassName" value="org.postgresql.Driver"></property>    
+        <property name="url" value="jdbc:postgresql://localhost:5432/cspharma_informacional"></property>
+        <property name="username" value="postgres"></property>
+        <property name="password" value="pr0f3s0r"></property>
+    </bean>
+</beans>
